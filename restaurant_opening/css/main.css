@@ -8,6 +8,18 @@ a {
     text-decoration: none;
 }
 
+/* Button */
+.btn--primary {
+    width: 335px;
+    height: 70px;
+    background: #7287ae;
+    border: none;
+    border-radius: 35px;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: .4em;
+}
+
 /* Section & inner */
 .section {
     position: relative;
@@ -67,3 +79,116 @@ header .main-menu li a {
 header .main-menu li a:hover {
     border-bottom: 2px dashed #fff;
 }
+
+
+/* Main Visual */
+.main-visual {
+    height: 500px;
+    background: #7287ae;
+    text-align: center;
+}
+.main-visual h2 {
+    padding: 60px 0;
+    color: #fff;
+    font-size: 75px;
+    font-weight: 500;
+}
+.main-visual p {
+    max-width: 500px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    line-height: 1.5em;
+}
+.main-visual .bg-visual1 {
+    width: 90px;
+    height: 190px;
+    background: url("../img/white_dots_vertical.png") no-repeat;
+    position: absolute;
+    top: 200px;
+    right: 0;
+}
+.main-visual .bg-visual2 {
+    width: 190px;
+    height: 120px;
+    background: url("../img/white_dots_horizontal.png") no-repeat;
+    position: absolute;
+    bottom: -65px;
+    left: 10%;
+    z-index: 1;
+}
+
+
+/* Popular Menu */
+.popular-menu {
+    background: #e3ecc2;
+}
+.popular-menu .inner {
+    height: 900px;
+    text-align: center;
+}
+.popular-menu h1 {
+    padding: 80px 0 0 0;
+    color: #7287ae;
+    font-size: 35px;
+    font-weight: bold;
+}
+.popular-menu ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 20px;
+}
+.popular-menu ul li {
+
+}
+.popular-menu ul li .pic {
+    width: 300px;
+    height: 280px;
+}
+.popular-menu ul li .pic1 {
+    background: url("../img/best_menu_1.png") no-repeat center;
+}
+.popular-menu ul li .pic2 {
+    background: url("../img/best_menu_2.png") no-repeat center;
+}
+.popular-menu ul li .pic3 {
+    background: url("../img/best_menu_3.png") no-repeat center;
+}
+.popular-menu ul li .description {
+    width: 300px;
+    height: 200px;
+    background: #fff;
+    color: #504f4f;
+    font-size: 25px;
+    text-align: start;
+}
+.popular-menu ul li .description h2 {
+    padding: 20px;
+    font-weight: bold;
+}
+.popular-menu ul li .description p { 
+    padding: 0 20px;
+    font-family: Lato, 'sans-serif';
+    font-size: 18px;
+    line-height: 1.3em;
+}
+.popular-menu ul li .description span { 
+    display: inline-block;
+    padding: 20px;
+    font-weight: bold;
+}
+.popular-menu .btn--primary {
+
+} 
+.popular-menu .bg-visual {
+    width: 140px;
+    height: 110px;
+    background: url("../img/blue_dots_16.png") no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 70px;
+}
+
+
+
