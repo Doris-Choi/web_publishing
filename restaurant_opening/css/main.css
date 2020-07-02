@@ -1,6 +1,69 @@
+/* Common */
 .body__container {
-    background: #e3ecc2;
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     font-weight: 400;
+}
+a {
+    text-decoration: none;
+}
+
+/* Section & inner */
+.section {
+    position: relative;
+}
+.section .inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Float & Clearfix */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.float--left {
+    float: left;
+}
+.float--right {
+    float: right;
+}
+
+
+/* Header */
+header {
+    background: #7287ae;
+}
+header .inner {
+    height: 144px;
+}
+header .logo {
+    display: block;
+    width: 300px;
+    height: 50px;
+    background: url("../img/logo_main.png") no-repeat;
+    text-indent: -9999px;
+    position: absolute;
+    top: 47px;
+    left: 0;
+}
+header .main-menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+header .main-menu li {
+    margin-left: 50px;
+}
+header .main-menu li a {
+    padding-bottom: 7px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+}
+header .main-menu li a:hover {
+    border-bottom: 2px dashed #fff;
 }
