@@ -398,3 +398,54 @@ header .main-menu li a:hover {
     bottom: 10px;
     left: 10%;
 }
+
+
+/* Footer */
+footer {
+    background: #7287ae;
+    color: #fff;
+}
+footer .inner {
+    height: 360px;
+    padding: 90px 20px;
+}
+footer .about-box {
+    display: flex;
+}
+footer .about-box div {
+    margin-left: 100px;
+}
+footer .about-box div:first-child {
+    margin-left: 0;
+}
+footer .about-box div h2 {
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: bold;
+}
+footer .about-box div ul {
+
+}
+footer .about-box div ul li {
+    margin-bottom: 14px;
+}
+footer .about-box div ul li a {
+    color: #fff;
+    font-weight: 300;
+}
+footer .copyright-box {
+    width: 50%;
+    margin: auto 0;
+}
+footer .copyright-box h1 {
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+footer .copyright-box a {
+    display: block;
+    margin-bottom: 14px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+}
