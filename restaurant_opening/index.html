@@ -15,21 +15,28 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="../css/main.css">
+    
+    <script defer src="main.js"></script>
 
 </head>
 <body>
 <div class="body__container">
 
     <!-- Header -->
-    <header class="section">
+    <header class="section clearfix">
         <div class="inner">
-            <a href="#" class="logo">logo</a>
-            <ul class="main-menu float--right">
+            <div class="logo float--left">
+                <a href="#">logo</a>
+            </div>
+            <ul class="main-menu float--right toggle">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Our Menu</a></li>
                 <li><a href="#">Promotion</a></li>
                 <li><a href="#">Order</a></li>
             </ul>
+
+            <!-- toggle -->
+            <div id="toggle-btn">Header Toggle Button</div>
         </div>
     </header>
 
@@ -54,7 +61,7 @@
             <h1>POPULAR MENU</h1>
             <ul class="menu-list">
                 <li>
-                    <div class="pic pic1">Noodles</div>
+                    <img src="../img/best_menu_1.png" alt="best menu 1, Noodle">
                     <div class="description">
                         <h2>Noodles</h2>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -62,7 +69,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="pic pic2">Noodles</div>
+                    <img src="../img/best_menu_2.png" alt="best menu 2, Noodle">
                     <div class="description">
                         <h2>Noodles</h2>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -70,7 +77,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="pic pic3">Noodles</div>
+                    <img src="../img/best_menu_3.png" alt="best menu 3, Noodle">
                     <div class="description">
                         <h2>Noodles</h2>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -78,7 +85,7 @@
                     </div>
                 </li>
             </ul>
-            <button class="btn--primary">SHOW MORE</button>
+            <a class="btn--primary">SHOW MORE</a>
             <div class="blue-16"></div>
         </div>
     </section>
@@ -93,7 +100,7 @@
                     <div class="description">
                         <h2>Discount up to<br/>50% All Menu</h2>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                        <button class="btn--primary">READ MORE</button>
+                        <a href="#" class="btn--primary">READ MORE</a>
                     </div>
                 </li>
                 <li>

@@ -12,8 +12,36 @@ p {
     font-weight: 300;
 }
 
+/* Section & inner */
+.section {
+    position: relative;
+}
+.section .inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Float & Clearfix */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.float--left {
+    float: left;
+}
+.float--right {
+    float: right;
+}
+
 /* Button */
 .btn--primary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 335px;
     height: 70px;
     background: #7287ae;
@@ -22,6 +50,7 @@ p {
     color: #fff;
     font-size: 18px;
     letter-spacing: .4em;
+    cursor: pointer;
 }
 
 /* Dots */
@@ -46,47 +75,25 @@ p {
     background: url("../img/blue_dots_20.png") no-repeat;
 }
 
-/* Section & inner */
-.section {
-    position: relative;
-}
-.section .inner {
-    max-width: 1180px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    position: relative;
-}
-
-/* Float & Clearfix */
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: block;
-}
-.float--left {
-    float: left;
-}
-.float--right {
-    float: right;
-}
-
 
 /* Header */
 header {
     background: #7287ae;
 }
 header .inner {
-    height: 144px;
+    height: 100px;
 }
 header .logo {
-    display: block;
     width: 300px;
     height: 50px;
+    position: absolute;
+    top: 20px;
+}
+header .logo a {
+    display: block;
+    height: 100%;
     background: url("../img/logo_main.png") no-repeat;
     text-indent: -9999px;
-    position: absolute;
-    top: 47px;
-    left: 0;
 }
 header .main-menu {
     display: flex;
@@ -99,11 +106,23 @@ header .main-menu li {
 header .main-menu li a {
     padding-bottom: 7px;
     color: #fff;
-    font-size: 17px;
+    font-size: 23px;
     font-weight: 500;
 }
 header .main-menu li a:hover {
     border-bottom: 2px dashed #fff;
+}
+#toggle-btn {
+    display: none;
+    width: 50px;
+    height: 50px;
+    background: url("../img/toggle_btn.svg") no-repeat;
+    background-size: contain;
+    text-indent: -9999px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 
@@ -161,19 +180,10 @@ header .main-menu li a:hover {
 .popular-menu ul li {
 
 }
-.popular-menu ul li .pic {
+.popular-menu ul li img {
+    display: block;
     width: 300px;
     height: 280px;
-    text-indent: -9999px;
-}
-.popular-menu ul li .pic1 {
-    background: url("../img/best_menu_1.png") no-repeat center/cover;
-}
-.popular-menu ul li .pic2 {
-    background: url("../img/best_menu_2.png") no-repeat center/cover;
-}
-.popular-menu ul li .pic3 {
-    background: url("../img/best_menu_3.png") no-repeat center/cover;
 }
 .popular-menu ul li .description {
     width: 300px;
@@ -214,6 +224,7 @@ header .main-menu li a:hover {
 .promotion .inner {
     display: grid;
     height: 1000px;
+    padding: 0;
 }
 .promotion ul {
 
@@ -407,10 +418,10 @@ footer {
 }
 footer .inner {
     height: 360px;
-    padding: 90px 20px;
 }
 footer .about-box {
     display: flex;
+    margin-top: 90px;
 }
 footer .about-box div {
     margin-left: 100px;
@@ -435,7 +446,7 @@ footer .about-box div ul li a {
 }
 footer .copyright-box {
     width: 50%;
-    margin: auto 0;
+    margin-top: 90px;
 }
 footer .copyright-box h1 {
     margin-bottom: 40px;
@@ -448,4 +459,50 @@ footer .copyright-box a {
     color: #fff;
     font-size: 18px;
     font-weight: 300;
+}
+
+
+@media (max-width: 1024px) {
+    header .inner {
+        max-width: none;
+        height: auto;
+        padding: 0 20px;
+    }
+    header .logo,
+    header .main-menu {
+        float: none;
+    }
+    header .logo {
+        padding: 20px 0;
+        position: static;
+    }
+    header .main-menu {
+        display: block;
+    }
+    header .main-menu li {
+        margin: 0;
+        border-top: 2px dotted #eee;
+    }
+    header .main-menu li:last-child {
+        border-bottom: 3px solid #eee;
+    }
+    header .main-menu li a {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        padding-left: 20px;
+    }
+    header .main-menu li a:hover {
+        border: none;
+        font-size: 1.5em;
+    }
+    header .toggle {
+        display: none;
+    }
+    header .toggle.on {
+        display: block;
+    }
+    #toggle-btn {
+        display: block;
+    }
 }
