@@ -17,7 +17,7 @@ p {
     position: relative;
 }
 .section .inner {
-    max-width: 1180px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
@@ -167,7 +167,7 @@ header .main-menu li a:hover {
     background: #e3ecc2;
 }
 .popular-menu .inner {
-    height: 900px;
+    height: 830px;
     text-align: center;
 }
 .popular-menu h1 {
@@ -186,11 +186,11 @@ header .main-menu li a:hover {
 }
 .popular-menu ul li img {
     display: block;
-    width: 300px;
-    height: 280px;
+    width: 280px;
+    height: 260px;
 }
 .popular-menu ul li .description {
-    width: 300px;
+    width: 280px;
     height: 200px;
     padding: 20px;
     box-sizing: border-box;
@@ -325,7 +325,7 @@ header .main-menu li a:hover {
     font-size: 32px;
 }
 .order-procedure ol li p {
-    width: 320px;
+    width: 270px;
     margin: 0 20px 70px;
     font-size: 16px;
     line-height: 1.3;
@@ -347,7 +347,7 @@ header .main-menu li a:hover {
     font-weight: bold;
 }
 .delivery p {
-    width: 760px;
+    max-width: 720px;
     margin: 60px auto;
     font-size: 23px;
     line-height: 1.3;
@@ -360,6 +360,7 @@ header .main-menu li a:hover {
     bottom: 0;
     right: 10%;
     transform: translateY(50%);
+    z-index: 1;
 }
 
 
@@ -379,7 +380,7 @@ header .main-menu li a:hover {
     background: url("../img/quotes.png") no-repeat;
 }
 .contect p {
-    width: 900px;
+    max-width: 900px;
     margin: 40px 0;
     font-size: 28px;
     text-align: center;
@@ -423,7 +424,7 @@ footer {
     color: #fff;
 }
 footer .inner {
-    height: 360px;
+    height: 340px;
 }
 footer .about-box {
     display: flex;
@@ -435,8 +436,8 @@ footer .about-box div {
 footer .about-box div:first-child {
     margin-left: 0;
 }
-footer .about-box div h2 {
-    margin-bottom: 40px;
+footer .about-box div h1 {
+    margin-bottom: 30px;
     font-size: 18px;
     font-weight: bold;
 }
@@ -454,8 +455,8 @@ footer .copyright-box {
     width: 50%;
     margin-top: 90px;
 }
-footer .copyright-box h1 {
-    margin-bottom: 40px;
+footer .copyright-box h2 {
+    margin-bottom: 30px;
     font-size: 20px;
     font-weight: bold;
 }
@@ -586,5 +587,41 @@ footer .copyright-box a {
     }
     .order-procedure ol li p {
         width: auto;
+    }
+
+
+    /* Contect */
+    .contect {
+        height: auto;
+    }
+    .contect .quote {
+        margin-top: 50px;
+    }
+    .contect .logo-box {
+        margin: 60px 0;
+    }
+    .contect .blue-20 {
+        display: none;
+    }
+
+
+    /* Footer */
+    footer .inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: none;
+        height: auto;
+    }
+    footer .about-box,
+    footer .copyright-box {
+        float: none;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+    footer .copyright-box {
+        width: 383px;
+        margin-bottom: 10px;
     }
 }
