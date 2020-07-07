@@ -1,0 +1,154 @@
+/* Header */
+header .inner {
+    max-width: none;
+    height: auto;
+    padding: 0 20px;
+}
+header .logo,
+header .main-menu {
+    float: none;
+}
+header .logo {
+    padding: 20px 0;
+    position: static;
+}
+header .main-menu {
+    display: block;
+}
+header .main-menu li {
+    margin: 0;
+    border-top: 2px dotted #eee;
+}
+header .main-menu li:last-child {
+    border-bottom: 3px solid #eee;
+}
+header .main-menu li a {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-left: 20px;
+}
+header .main-menu li a:hover {
+    border: none;
+    font-size: 1.5em;
+}
+header .toggle {
+    display: none;
+}
+header .toggle.on {
+    display: block;
+}
+#toggle-btn {
+    display: block;
+}
+
+
+/* Popular Menu */
+.popular-menu .inner {
+    max-width: none;
+    height: auto;
+}
+.popular-menu ul {
+    display: block;
+    max-width: 650px;
+    margin: 50px auto 0;
+}
+.popular-menu ul li {
+    display: flex;
+}
+.popular-menu ul li img {
+    width: 220px;
+    height: 200px;
+    margin-bottom: 50px;
+}
+.popular-menu ul li .description {
+    width: auto;
+}
+.popular-menu .btn--primary {
+    margin-bottom: 60px;
+}
+
+
+/* Promotion */
+.promotion .inner {
+    height: auto;
+}
+.promotion ul li div {
+    height: 400px;
+}
+.promotion ul li .description {
+    padding: 30px;
+    font-size: 20px;
+}
+.promotion ul li .description h2 {
+    font-size: 1.3em;
+}
+.promotion ul li .description p {
+    font-size: 1em;
+}
+.promotion ul li .description .btn--primary {
+    width: 15em;
+    margin: 0 auto;
+}
+.promotion .blue-20 {
+    display: none;
+}
+
+
+/* Order Procedure */
+.order-procedure .inner {
+    max-width: none;
+    height: auto;
+    font-size: 20px;
+}
+.order-procedure h1 {
+    padding-bottom: 0;
+}
+.order-procedure ol {
+    max-width: 1000px;
+}
+.order-procedure ol li div {
+    margin: 50px auto;
+}
+.order-procedure ol li h2 {
+    font-size: 1.2em;
+}
+.order-procedure ol li p {
+    width: auto;
+}
+
+
+/* Contect */
+.contect {
+    height: auto;
+}
+.contect .quote {
+    margin-top: 50px;
+}
+.contect .logo-box {
+    margin: 60px 0;
+}
+.contect .blue-20 {
+    display: none;
+}
+
+
+/* Footer */
+footer .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: none;
+    height: auto;
+}
+footer .about-box,
+footer .copyright-box {
+    float: none;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+footer .copyright-box {
+    width: 383px;
+    margin-bottom: 10px;
+}
