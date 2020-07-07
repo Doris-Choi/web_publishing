@@ -30,7 +30,7 @@ header .main-menu li a {
 }
 header .main-menu li a:hover {
     border: none;
-    font-size: 1.5em;
+    font-size: 1.em;
 }
 header .toggle {
     display: none;
