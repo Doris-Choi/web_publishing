@@ -158,7 +158,7 @@ header .main-menu li a {
 
 }
 .visual .summary .summary__description {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 .visual .summary .btn {
     margin: 0 auto;
@@ -169,4 +169,30 @@ header .main-menu li a {
     box-sizing: border-box;
     background: url("../img/bg_visual_00004.png") no-repeat;
     background-size: contain;
+}
+
+
+/* PROGRAM */
+.program {
+    background: #e5e3e1;
+}
+.program .inner {
+    height: 550px;
+    background: linear-gradient(.25turn, rgba(229, 227, 225, 1), rgba(229, 227, 225, 0) 10%, rgba(229, 227, 225, 0) 90%, rgba(229, 227, 225, 1)),
+                url("../img/bg_program_00001.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.program .summary {
+    width: 50%;
+    padding: 120px 30px;
+}
+.program .summary .summary__title {
+
+}
+.program .summary .summary__description {
+    margin-bottom: 40px;
+}
+.program .summary a {
+    margin: 0 auto;
 }
