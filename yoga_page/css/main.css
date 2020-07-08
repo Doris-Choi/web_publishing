@@ -1,5 +1,6 @@
 /* COMMON */
 .body__container {
+    background: #fff;
     color: #484f5b;
     font-family: 'Libre Franklin', sans-serif;
     font-size: 17px;
@@ -47,15 +48,14 @@ a {
 
 /* SUMMARY */
 .summary__title {
-    font-size: 35px;
+    font-size: 45px;
     font-weight: bold;
     line-height: 1.25;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .summary__description {
-    font-size: 23px;
     font-weight: 300;
-    line-height: 1.5;
+    line-height: 1.8;
 }
 
 /* SECTION & INNER */
@@ -113,4 +113,60 @@ header .main-menu li {
 header .main-menu li a {
     padding: 20px;
     color: #484f5b;
+}
+
+
+/* VISUAL */
+.visual {
+
+}
+.visual .bg {
+    text-indent: -9999px;
+    position: absolute;  
+}
+.visual .bg1 {
+    width: 200px;
+    height: 90px;
+    background: url("../img/bg_visual_00001.png") no-repeat;
+    background-size: contain;
+    top: 0;
+    left: 0;
+}
+.visual .bg2 {
+    width: 210px;
+    height: 150px;
+    background: url("../img/bg_visual_00002.png") no-repeat;
+    background-size: contain;
+    top: 0;
+    right: 0;
+}
+.visual .bg3 {
+    width: 153px;
+    height: 120px;
+    background: url("../img/bg_visual_00003.png") no-repeat;
+    background-size: contain;
+    bottom: 0;
+    right: 0;
+}
+.visual .inner {
+    padding: 50px;
+}
+.visual .summary {
+    width: 45%;
+}
+.visual .summary .summary__title {
+
+}
+.visual .summary .summary__description {
+    margin-bottom: 30px;
+}
+.visual .summary .btn {
+    margin: 0 auto;
+}
+.visual .inner .bg {
+    width: 45%;
+    height: 89%;
+    box-sizing: border-box;
+    background: url("../img/bg_visual_00004.png") no-repeat;
+    background-size: contain;
 }
