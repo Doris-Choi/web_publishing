@@ -323,3 +323,81 @@ header .main-menu li a {
 .promotion .summary .btn {
     margin: 0 auto;
 }
+
+
+/* GALLERY */
+.gallery {
+
+}
+.gallery .bg {
+    position: absolute;
+    text-indent: -9999px;
+}
+.gallery .bg1 {
+    width: 200px;
+    height: 300px;
+    background: url("../img/bg_gallery_00001.png") no-repeat;
+    background-size: contain;
+    top: 60px;
+    left: 30px;
+}
+.gallery .bg2 {
+    width: 200px;
+    height: 150px;
+    background: url("../img/bg_gallery_00002.png") no-repeat;
+    background-size: contain;
+    bottom: 0;
+    left: 0;
+}
+.gallery .bg3 {
+    width: 118px;
+    height: 240px;
+    background: url("../img/bg_gallery_00003.png") no-repeat;
+    background-size: contain;
+    top: 0;
+    right: 0;
+}
+.gallery .bg4 {
+    width: 200px;
+    height: 210px;
+    background: url("../img/bg_gallery_00004.png") no-repeat;
+    background-size: contain;
+    bottom: 0;
+    right: 0;
+}
+.gallery .inner {
+    padding: 50px 30px 80px;
+    text-align: center;
+}
+.gallery .inner > .summary__title {
+    margin: 0 auto 30px;
+}
+.gallery .inner > .summary__description {
+    max-width: 650px;
+    margin: 0 auto 40px;
+}
+.gallery ul {
+    display: flex;
+    justify-content: space-between;
+}
+.gallery ul li {
+    box-shadow: #e9e9e9 10px 20px 20px;
+}
+.gallery ul li img {
+    display: block;
+    width: 230px;
+} 
+.gallery ul li .summary {
+    width: 230px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #fff;
+}
+.gallery ul li .summary .summary__title {
+    margin: 0 auto 10px;
+    font-size: 20px;
+}
+.gallery ul li .summary .summary__description {
+    font-size: 15px;
+    line-height: 1.3;
+}
