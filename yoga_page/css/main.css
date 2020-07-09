@@ -193,7 +193,7 @@ header .main-menu li a {
 .program .summary .summary__description {
     margin-bottom: 40px;
 }
-.program .summary a {
+.program .summary .btn {
     margin: 0 auto;
 }
 
@@ -252,6 +252,49 @@ header .main-menu li a {
 
 /* LESSON */
 .lesson {
-    height: 1000px;
-    background: #eee;
+    
+}
+.lesson .inner {
+    display: flex;
+    align-items: center;
+}
+.lesson .bg {
+    position: absolute;
+    text-indent: -9999px;
+}
+.lesson .bg1 {
+    width: 130px;
+    height: 135px;
+    background: url("../img/bg_lesson_00001.png") no-repeat;
+    top: 0;
+    left: 0;
+}
+.lesson .bg2 {
+    width: 120px;
+    height: 100px;
+    background: url("../img/bg_lesson_00002.png") no-repeat;
+    bottom: 0;
+    left: 0;
+}
+.lesson .summary {
+    padding: 80px 30px;
+    width: 50%;
+}
+.lesson .summary .summary__title {
+
+}
+.lesson .summary .summary__description {
+    margin-bottom: 40px;
+}
+.lesson .summary .btn {
+    margin: 0 auto;
+}
+.lesson .pic {
+    width: 500px;
+    height: 400px;
+    margin-right: 30px;
+    background: url("../img/img_lesson.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-indent: -9999px;
 }
