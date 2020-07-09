@@ -226,6 +226,48 @@
         </div>
 
     </div>
+    
+
+    <!-- WHERE IS -->
+    <div class="section where-is">
+
+        <div class="inner">
+
+            <div class="summary">
+                <h1 class="summary__title">Where is Our Center?</h1>
+                <p class="summary__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            </div>
+
+            <div id="map"></div>
+
+        </div>
+    </div>
+
+
 </div>
+
+<script>
+
+    function initMap() {
+
+        const myLatLng = {
+            lat: 37.5154175,
+            lon: 126.9049401
+        }
+
+        const map = new google.maps.Map(document.getElementById('map'), {
+        center: myLatLng,
+        scrollwheel: false,
+        zoom: 10
+        })
+
+        const marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'My Address'
+    })
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCesQO-s6QO8S4PH7ilLm9sUFm_V3d5_m8&callback=initMap" async defer></script>
 </body>
 </html>
