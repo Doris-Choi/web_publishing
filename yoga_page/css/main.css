@@ -29,9 +29,9 @@ a {
 
 /* INPUT */
 .input--text {
-    width: 850px;
-    height: 34px;
-    padding: 0 30px;
+    display: block;
+    height: 36px;
+    padding: 0 20px;
     border: 2px solid #cdcdcd;
     border-radius: 5px;
     outline: none;
@@ -465,4 +465,82 @@ header .main-menu li a {
     width: 100%;
     height: 100%;
     order: -1;
+}
+
+
+/* CONNECT */
+.connect {
+    padding: 50px 30px;
+    text-align: center;
+}
+.connect .bg {
+    position: absolute;
+    text-indent: -9999px;
+}
+.connect .bg1 {
+    width: 200px;
+    height: 300px;
+    background: url("../img/bg_gallery_00001.png") no-repeat;
+    background-size: contain;
+    top: 60px;
+    left: 30px;
+}
+.connect .bg2 {
+    width: 200px;
+    height: 150px;
+    background: url("../img/bg_gallery_00002.png") no-repeat;
+    background-size: contain;
+    bottom: 0;
+    left: 0;
+}
+.connect .bg3 {
+    width: 118px;
+    height: 240px;
+    background: url("../img/bg_gallery_00003.png") no-repeat;
+    background-size: contain;
+    top: 0;
+    right: 0;
+}
+.connect .bg4 {
+    width: 200px;
+    height: 210px;
+    background: url("../img/bg_gallery_00004.png") no-repeat;
+    background-size: contain;
+    bottom: 0;
+    right: 0;
+}
+.connect .inner {
+
+}
+.connect .summary {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.connect .summary .summary__title {
+
+}
+.connect .summary .summary__description {
+    width: 100%;
+    margin-bottom: 40px;
+}
+#send-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+#send-form ul {
+    max-width: 800px;
+}
+#send-form ul li {
+}
+#send-form ul li input {
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+}
+#send-form ul li .message {
+    height: 100px;
+}
+#send-form ul li a {
+    margin: 40px auto 0;
 }
