@@ -571,3 +571,82 @@ header .main-menu li a:hover {
     height: 400px;
     box-shadow: 0 0 20px rgba(0, 0, 0, .2);
 }
+
+
+/* FOOTER */
+footer {
+    background: #484f5b;
+    color: #fff;
+    font-size: 15px;
+}
+footer .inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 30px;
+}
+footer .info_company {
+    width: 150px;
+}
+footer .info_company .summary__title {
+    font-size: 20px;
+}
+footer .info_company .summary__description {
+    margin-bottom: 30px;
+}
+footer .info_company span {
+
+}
+footer .menu {
+    font-size: 18px;
+    font-weight: bold;
+}
+footer .menu li {
+    margin-top: 13px;
+    font-size: 15px;
+    font-weight: normal;
+}
+footer .menu li a {
+    color: #fff;
+}
+footer .copyright-box {
+
+}
+footer .copyright-box .home-logo {
+    width: 80px;
+    height: 80px;
+    background: url("../img/logo_footer.png") no-repeat;
+    background-size: contain;
+    text-indent: -9999px;
+}
+footer .copyright-box > a {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+}
+footer .copyright-box .social {
+    display: flex;
+    margin-top: 30px;
+    text-indent: -9999px;
+}
+footer .copyright-box .social .logo {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+footer .copyright-box .social .facebook {
+    background: url("../img/logo_footer_facebook.png") no-repeat,
+              #fff;
+    background-position: center;
+}
+footer .copyright-box .social .instagram {
+    background: url("../img/logo_footer_instagram.png") no-repeat,
+              #fff;
+    background-position: center;
+}
+footer .copyright-box .social .twitter {
+    background: url("../img/logo_footer_twitter.png") no-repeat,
+              #fff;
+    background-position: center;
+    margin-right: 0;
+}
