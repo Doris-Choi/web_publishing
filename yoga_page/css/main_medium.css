@@ -1,0 +1,28 @@
+header .inner {
+    max-width: none;
+    height: auto;
+}
+header .logo,
+header .main-menu {
+    float: none;
+}
+header .main-menu {
+    display: block;
+    margin: 20px 30px;
+}
+header .main-menu li {
+    border-top: 1px solid #f5f5f5;
+}
+header .main-menu li a {
+    display: block;
+    width: 100%;
+    padding: 15px;
+}
+
+
+header .toggle {
+    display: none;
+}
+#toggle-btn {
+    display: block;
+}
